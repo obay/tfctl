@@ -1,5 +1,6 @@
 #!/bin/bash
 
+export GITHUB_TOKEN=$(gh auth token)
 # If GITHUB_TOKEN is not defined, exit
 if [ -z "$GITHUB_TOKEN" ]; then
   echo "GITHUB_TOKEN is not defined"
